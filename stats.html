@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Flow - Estatísticas</title>
+
+    <link rel="stylesheet"
+          href="css/stats.css">
+
+          <!-- O parâmetro ?v=2 força atualização do cache do navegador -->
+    <link rel="icon" href="/imagens/Logo.png?v=2">
+
+</head>
+
+<body>
+
+    <!-- =========================
+     BARRA DE NAVEGAÇÃO
+========================= -->
+
+<nav>
+
+    <!-- Links principais da aplicação -->
+    <div class="nav-links">
+
+        <!-- Logo clicável que leva para a página inicial -->
+        <a href="home.html">
+
+            <img
+                src="imagens/logo.png"
+                alt="Logo Flow"
+                class="logo"
+                style="height: 40px; vertical-align: middle;">
+
+        </a>
+
+        <!-- Link para tarefas -->
+        <a href="home.html">Tasks</a>
+
+            <!-- Link para a loja -->
+            <a href="shop.html">Shops</a>
+
+        <!-- Link para a estatística -->
+        <a href="stats.html">Estatísticas</a>
+
+        <!-- Botão de sair (apenas redireciona para login) -->
+        <a href="index.html" style="color: #ff4b4b;">
+            Sair
+        </a>
+
+    </div>
+
+    <!-- Exibição de moedas do jogador -->
+    <div class="currency-display">
+
+        <!-- Diamantes -->
+        <span>
+            💎 <span id="diamonds">0</span>
+        </span>
+
+        <!-- Moedas -->
+        <span>
+            💰 <span id="coins">0</span>
+        </span>
+
+    </div>
+
+    </nav>
+
+    <h1>📊 Estatísticas</h1>
+
+    <div id="stats-container"></div>
+
+    <div id="general-stats"></div>
+
+    <h2>📜 Últimos Relatórios</h2>
+
+    <div id="history-container"></div>
+
+    <script src="js/stats.js"></script>
+
+</body>
+
+</html>

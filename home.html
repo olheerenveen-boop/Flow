@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<!-- Define que o documento usa HTML5 -->
+<html lang="pt-br">
+
+<head>
+
+    <!-- Define a codificação UTF-8
+         (permite usar acentos, emojis, etc.) -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página adaptar-se corretamente
+         a telemóveis e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Flow - Home</title>
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" href="/imagens/Logo.png?v=2">
+
+    <!-- Ficheiro CSS responsável pelo visual da página -->
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     BARRA DE NAVEGAÇÃO
+========================= -->
+<nav>
+
+    <!-- Área dos links de navegação -->
+    <div class="nav-links">
+
+        <!-- Logo clicável que leva para a página inicial -->
+        <a href="home.html">
+            <img
+                src="imagens/logo.png"
+                alt="Logo Flow"
+                class="logo"
+                style="height: 40px; vertical-align: middle;">
+        </a>
+
+        <!-- Link para a página principal -->
+        <a href="home.html">Tasks</a>
+
+        <!-- Link para a loja -->
+        <a href="shop.html">Shops</a>
+
+        <!-- Link para a estatística -->
+        <a href="stats.html">Estatísticas</a>
+
+        <!-- Link para sair da conta
+             (atualmente apenas redireciona para index.html) -->
+        <a 
+        href="index.html" 
+        onclick="return confirmLogout()"
+        style="color: #ff4b4b;">
+
+        Sair
+
+        </a>
+
+    </div>
+
+    <!-- Exibição dos recursos do jogador -->
+    <div class="currency-display">
+
+        <!-- Quantidade de diamantes -->
+        <span>
+            💎 <span id="diamonds">0</span>
+        </span>
+
+        <!-- Quantidade de moedas -->
+        <span>
+            💰 <span id="coins">0</span>
+        </span>
+
+    </div>
+
+</nav>
+
+<!-- =========================
+     CARTÃO DO PERSONAGEM
+========================= -->
+<div class="character-card">
+
+    <!-- Avatar do jogador
+         Será atualizado pelo JavaScript -->
+    <div class="avatar-box" id="avatar-container">
+        👤
+    </div>
+
+    <!-- Estatísticas do jogador -->
+    <div class="stats-container">
+
+        <!-- Nome e nível -->
+        <h3 id="user-info"
+            style="margin: 0 0 10px 0;">
+
+            Usuário - Level 1
+        </h3>
+
+        <!-- Texto do HP -->
+        <div
+            style="font-size: 0.9em; font-weight: bold;">
+
+            ❤️ Vida:
+            <span id="hp-text">
+                50/50
+            </span>
+
+        </div>
+
+        <!-- Barra visual de HP -->
+        <div class="bar-bg">
+            <div
+                id="hp-fill"
+                class="bar-fill">
+            </div>
+        </div>
+
+        <!-- Texto do XP -->
+        <div
+            style="font-size: 0.9em;
+                   font-weight: bold;
+                   margin-top: 5px;">
+
+            ⭐ Exp:
+            <span id="xp-text">
+                0/25
+            </span>
+
+        </div>
+
+        <!-- Barra visual de XP -->
+        <div class="bar-bg">
+            <div
+                id="xp-fill"
+                class="bar-fill">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     BOTÃO DE NOVA ATIVIDADE
+========================= -->
+
+<!-- Abre a janela modal de criação -->
+<button
+    class="add-btn"
+    onclick="openModal()">
+
+    + Add Activity
+
+</button>
+
+
+
+<!-- =========================
+     COLUNAS DE TAREFAS
+========================= -->
+
+<div class="main-container">
+
+    <!-- Coluna de hábitos -->
+    <div class="column">
+
+        <h3>Hábitos</h3>
+
+        <!-- Lista preenchida pelo JavaScript -->
+        <div id="list-habit"></div>
+
+    </div>
+
+    <!-- Coluna de tarefas diárias -->
+    <div class="column">
+
+        <h3>Diárias</h3>
+
+        <!-- Lista preenchida pelo JavaScript -->
+        <div id="list-daily"></div>
+
+    </div>
+
+    <!-- Coluna de tarefas únicas -->
+    <div class="column">
+
+        <h3>Tarefas</h3>
+
+        <!-- Lista preenchida pelo JavaScript -->
+        <div id="list-todo"></div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     MODAL DE CRIAÇÃO
+========================= -->
+
+<div
+    id="taskModal"
+    class="modal">
+
+    <div class="modal-content">
+
+        <!-- Título da janela -->
+        <h3>Nova Atividade</h3>
+
+        <!-- Campo para nome da atividade -->
+        <input
+            type="text"
+            id="taskName"
+            placeholder="Nome da atividade">
+
+        <!-- Escolha do tipo da tarefa -->
+        <select id="taskType">
+
+            <option value="habit">
+                Hábito
+            </option>
+
+            <option value="daily">
+                Diária
+            </option>
+
+            <option value="todo">
+                Tarefa Única
+            </option>
+
+        </select>
+
+        <!-- Grupo de botões -->
+        <div class="btn-group">
+
+            <!-- Cria a atividade -->
+            <button
+                class="btn-save"
+                onclick="addTask()">
+
+                Adicionar
+
+            </button>
+
+            <!-- Fecha a janela -->
+            <button
+                class="btn-cancel"
+                onclick="closeModal()">
+
+                Cancelar
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MODAL RELATÓRIO -->
+
+<div id="reportModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>📜 Relatório Diário</h2>
+
+        <div id="reportContent"></div>
+
+
+        <button 
+        class="btn-save"
+        onclick="closeReport()">
+
+            Continuar
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     JAVASCRIPT PRINCIPAL
+========================= -->
+
+<!-- Carrega toda a lógica da página:
+     tarefas, recompensas, renderização,
+     níveis, avatar, etc. -->
+<script src="js/home.js"></script>
+
+</body>
+</html>

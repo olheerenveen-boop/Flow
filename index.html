@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- Define que o documento usa HTML5 -->
+<html lang="pt-br">
+
+<head>
+
+    <!-- Define a codificação UTF-8
+         para suportar acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página adaptar-se corretamente
+         a telemóveis, tablets e computadores -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Flow - Login</title>
+
+    <!-- Importa o ficheiro CSS responsável
+     pelo visual da página -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     CARTÃO DE LOGIN
+========================= -->
+
+<div class="login-card">
+
+    <!-- Nome da aplicação -->
+    <h1>FLOW</h1>
+
+    <!-- Pequena descrição -->
+    <p>Gestão Gamificada</p>
+
+    <!-- Campo para o nome do utilizador -->
+    <input
+        type="text"
+        id="username"
+        placeholder="Nome de Usuário">
+
+    <!-- Campo para o email -->
+    <input
+        type="email"
+        id="email"
+        placeholder="E-mail">
+
+    <!-- Campo para a palavra-passe -->
+    <input
+        type="password"
+        id="password"
+        placeholder="Senha">
+
+    <!-- Botão responsável por:
+         - Fazer login
+         - Criar uma nova conta caso não exista -->
+    <button onclick="handleAuth()">
+
+        Entrar / Criar conta
+
+    </button>
+
+    <!-- Informação para o utilizador -->
+    <div class="footer-text">
+
+        Primeiro acesso cria conta automaticamente.
+
+    </div>
+
+</div>
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<!-- Carrega toda a lógica de login,
+     criação de conta e sessão -->
+<script src="js/index.js"></script>
+
+</body>
+</html>

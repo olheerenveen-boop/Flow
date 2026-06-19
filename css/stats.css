@@ -1,0 +1,331 @@
+:root {
+
+    --primary: #270043;
+    --bg-color: #000020;
+    --card-bg: #1a1a3a;
+    --accent: #8700e7;
+
+    --hp-color: #fd3b3b;
+    --xp-color: #ffcc00;
+
+}
+
+
+body {
+
+    font-family: 'Segoe UI', sans-serif;
+
+    margin: 0;
+
+    background-color: var(--bg-color);
+
+    color: white;
+
+    padding-bottom: 50px;
+
+}
+
+
+/* =====================
+        NAVBAR
+===================== */
+
+
+nav {
+
+    background-color: var(--primary);
+
+    padding: 12px 2%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.nav-links a {
+
+    margin-right: 20px;
+
+    font-weight: bold;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .2s;
+
+}
+
+
+.nav-links a:hover {
+
+    opacity: .7;
+
+}
+
+
+.currency-display {
+
+    display: flex;
+
+    gap: 15px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =====================
+        TITULOS
+===================== */
+
+
+h1 {
+
+    text-align: center;
+
+    color: #a532ff;
+
+    margin-top: 30px;
+
+}
+
+
+h2 {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+}
+
+
+
+/* =====================
+     CARD PRINCIPAL
+===================== */
+
+
+#stats-container {
+
+    background: var(--card-bg);
+
+    width: 80%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.4);
+
+}
+
+
+#stats-container {
+
+    background: var(--card-bg);
+
+    width: 80%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 2px solid #8700e7;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.4);
+
+    transition: .2s;
+
+}
+
+#stats-container:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--accent);
+
+}
+
+
+
+/* =====================
+   ESTATÍSTICAS GERAIS
+===================== */
+
+
+#general-stats {
+
+    background: var(--card-bg);
+
+    border: 2px solid #a532ff;
+
+    width: 80%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    transition: .2s;
+
+}
+
+#stats-container p:hover {
+
+    transform: translateX(5px);
+
+    background: #303060;
+
+}
+
+
+#general-stats p {
+
+    margin: 12px;
+
+    font-size: 17px;
+
+    transition: .2s;
+
+}
+
+#general-stats p:hover {
+
+    transform: translateX(5px);
+
+}
+
+
+
+/* =====================
+      HISTÓRICO
+===================== */
+
+
+#history-container {
+
+    width: 80%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+}
+
+
+
+#history-container div {
+
+
+    background: var(--card-bg);
+
+
+    border: 2px solid #333;
+
+
+    padding: 15px;
+
+
+    margin-bottom: 15px;
+
+
+    border-radius: 15px;
+
+
+    transition: .2s;
+
+
+}
+
+
+
+#history-container div:hover {
+
+
+    transform: translateY(-5px);
+
+
+    border-color: var(--accent);
+
+
+}
+
+
+
+#history-container h3 {
+
+
+    color: #a532ff;
+
+
+}
+
+
+
+#history-container p {
+
+
+    margin: 8px 0;
+
+
+}
+
+
+
+/* =====================
+        RESPONSIVO
+===================== */
+
+
+@media(max-width:600px){
+
+
+    .nav-links a {
+
+        margin-right: 8px;
+
+        font-size: 14px;
+
+    }
+
+
+    #stats-container,
+    #general-stats,
+    #history-container {
+
+        width: 90%;
+
+    }
+
+
+}
