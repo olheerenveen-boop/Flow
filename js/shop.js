@@ -39,42 +39,42 @@ const skins = [
 
     //Masculinas
     //Skins Comuns
-    { id: 1, country: "Argentina", price: 40, currency: "coins", level:1, img: "imagens/Argentina.png" },
-    { id: 2, country: "EUA", price: 50, currency: "coins", level: 2, img: "imagens/EUA.png" },
+    { id: 1, country: "Argentina", price: 40, currency: "coins", level:1, img: "Imagens/Argentina.png" },
+    { id: 2, country: "EUA", price: 50, currency: "coins", level: 2, img: "Imagens/EUA.png" },
 
-    { id: 3, country: "China", price: 65, currency: "coins", level: 2, img: "imagens/China.png" },
-    { id: 4, country: "Japão", price: 80, currency: "coins", level: 3, img: "imagens/Japão.png" },
-    { id: 5, country: "Alemanha", price: 100, currency: "coins", level: 3, img: "imagens/Alemanha.png" },
-    { id: 6, country: "França", price: 120, currency: "coins", level: 4, img: "imagens/França.png" },
-    { id: 7, country: "Rússia", price: 140, currency: "coins", level: 4, img: "imagens/Rússia.png" },
-    { id: 8, country: "Nigéria", price: 150, currency: "coins", level: 5, img: "imagens/Nigéria.png" },
-    { id: 9, country: "Espanha", price: 200, currency: "coins", level: 5, img: "imagens/Espanha.png" },
-    { id: 10, country: "Egipto", price: 250, currency: "coins", level: 6, img: "imagens/Egipto.png" },
+    { id: 3, country: "China", price: 65, currency: "coins", level: 2, img: "Imagens/China.png" },
+    { id: 4, country: "Japão", price: 80, currency: "coins", level: 3, img: "Imagens/Japão.png" },
+    { id: 5, country: "Alemanha", price: 100, currency: "coins", level: 3, img: "Imagens/Alemanha.png" },
+    { id: 6, country: "França", price: 120, currency: "coins", level: 4, img: "Imagens/França.png" },
+    { id: 7, country: "Rússia", price: 140, currency: "coins", level: 4, img: "Imagens/Rússia.png" },
+    { id: 8, country: "Nigéria", price: 150, currency: "coins", level: 5, img: "Imagens/Nigéria.png" },
+    { id: 9, country: "Espanha", price: 200, currency: "coins", level: 5, img: "Imagens/Espanha.png" },
+    { id: 10, country: "Egipto", price: 250, currency: "coins", level: 6, img: "Imagens/Egipto.png" },
 
     //Skins Raras
-    { id: 11, country: "México", price: 10, currency: "diamonds", level: 7, img: "imagens/México.png" },
-    { id: 12, country: "Brasil", price: 20, currency: "diamonds", level: 8, img: "imagens/Brasil.png" },
-    { id: 13, country: "Portugal", price: 30, currency: "diamonds", level: 9, img:"imagens/Portugal.png" },
-    { id: 14, country: "Austrália", price: 40, currency: "diamonds", level: 10, img: "imagens/Austrália.png" },
+    { id: 11, country: "México", price: 10, currency: "diamonds", level: 7, img: "Imagens/México.png" },
+    { id: 12, country: "Brasil", price: 20, currency: "diamonds", level: 8, img: "Imagens/Brasil.png" },
+    { id: 13, country: "Portugal", price: 30, currency: "diamonds", level: 9, img:"Imagens/Portugal.png" },
+    { id: 14, country: "Austrália", price: 40, currency: "diamonds", level: 10, img: "Imagens/Austrália.png" },
 
     //Femininas 
     //Skins Comuns
-    { id: 15, country: "Irlanda", price: 40, currency: "coins", level: 1, img: "imagens/Irlanda.png" },
-    { id: 16, country: "Países Baixos", price: 50, currency: "coins", level: 2, img: "imagens/Países Baixos.png" },
-    { id: 17, country: "Itália", price: 65, currency: "coins", level: 2, img: "imagens/Itália.png" },
-    { id: 18, country: "Peru", price: 80, currency: "coins", level: 3, img: "imagens/Peru.png" },
-    { id: 19, country: "Reino Unido", price: 100, currency: "coins", level: 3, img: "imagens/Reino Unido.png" },
-    { id: 20, country: "Nepal", price: 120, currency: "coins", level: 4, img: "imagens/Nepal.png" },
-    { id: 21, country: "Arábia Saudita", price: 140, currency: "coins", level: 4, img: "imagens/Arábia Saudita.png" },
-    { id: 22, country: "Ucrânia", price: 150, currency: "coins", level: 5, img: "imagens/Ucrânia.png" },
-    { id: 23, country: "Índia", price: 200, currency: "coins", level: 5, img: "imagens/Índia.png" },
-    { id: 24, country: "Nova Zelândia", price: 250, currency: "coins", level: 6, img: "imagens/Nova Zelândia.png" },
+    { id: 15, country: "Irlanda", price: 40, currency: "coins", level: 1, img: "Imagens/Irlanda.png" },
+    { id: 16, country: "Países Baixos", price: 50, currency: "coins", level: 2, img: "Imagens/Países Baixos.png" },
+    { id: 17, country: "Itália", price: 65, currency: "coins", level: 2, img: "Imagens/Itália.png" },
+    { id: 18, country: "Peru", price: 80, currency: "coins", level: 3, img: "Imagens/Peru.png" },
+    { id: 19, country: "Reino Unido", price: 100, currency: "coins", level: 3, img: "Imagens/Reino Unido.png" },
+    { id: 20, country: "Nepal", price: 120, currency: "coins", level: 4, img: "Imagens/Nepal.png" },
+    { id: 21, country: "Arábia Saudita", price: 140, currency: "coins", level: 4, img: "Imagens/Arábia Saudita.png" },
+    { id: 22, country: "Ucrânia", price: 150, currency: "coins", level: 5, img: "Imagens/Ucrânia.png" },
+    { id: 23, country: "Índia", price: 200, currency: "coins", level: 5, img: "Imagens/Índia.png" },
+    { id: 24, country: "Nova Zelândia", price: 250, currency: "coins", level: 6, img: "Imagens/Nova Zelândia.png" },
 
     //Skins Raras
-    { id: 25, country: "Vaticano", price: 10, currency: "diamonds", level: 7, img: "imagens/Vaticano.png" },
-    { id: 26, country: "Jamaica", price: 20, currency: "diamonds", level: 8, img: "imagens/Jamaica.png" },
-    { id: 27, country: "Noruega", price: 30, currency: "diamonds", level: 9, img: "imagens/Noruega.png" },
-    { id: 28, country: "Grécia", price: 40, currency: "diamonds", level: 10, img: "imagens/Grécia.png" },
+    { id: 25, country: "Vaticano", price: 10, currency: "diamonds", level: 7, img: "Imagens/Vaticano.png" },
+    { id: 26, country: "Jamaica", price: 20, currency: "diamonds", level: 8, img: "Imagens/Jamaica.png" },
+    { id: 27, country: "Noruega", price: 30, currency: "diamonds", level: 9, img: "Imagens/Noruega.png" },
+    { id: 28, country: "Grécia", price: 40, currency: "diamonds", level: 10, img: "Imagens/Grécia.png" },
     
 ];
 
