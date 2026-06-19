@@ -491,7 +491,7 @@
         if(player.equippedSkin){
 
             avatar.innerHTML = 
-            `<img src="imagens/${player.equippedSkin}.png"
+            `<img src="Imagens/${player.equippedSkin}.png"
             style="height:100px;">`;
 
         } else {
