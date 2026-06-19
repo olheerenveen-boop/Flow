@@ -496,7 +496,8 @@
 
         } else {
 
-            avatar.innerHTML = "👤";
+        avatar.innerHTML =
+        `<img src="Imagens/Default.png">`;
 
         }
 
