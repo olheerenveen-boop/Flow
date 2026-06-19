@@ -497,7 +497,7 @@
         } else {
 
         avatar.innerHTML =
-        `<img src="Imagens/Default.png">`;
+        `<img src="Imagens/default.png">`;
 
         }
 
