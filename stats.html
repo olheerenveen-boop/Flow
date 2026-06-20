@@ -50,8 +50,13 @@
         <a href="stats.html">Estatísticas</a>
 
         <!-- Botão de sair (apenas redireciona para login) -->
-        <a href="index.html" style="color: #ff4b4b;">
-            Sair
+        <a 
+        href="index.html" 
+        onclick="return confirmLogout()"
+        style="color: #ff4b4b;">
+
+        Sair
+
         </a>
 
     </div>
@@ -83,7 +88,12 @@
 
     <div id="history-container"></div>
 
+    <!-- Controla toda a lógica da loja:
+     renderização, compra, equipar e salvamento -->
+    <script src="js/alerts.js"></script>
     <script src="js/stats.js"></script>
+    
+    <div id="game-alert"></div>
 
 </body>
 

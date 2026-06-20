@@ -195,3 +195,11 @@ generalStats.innerHTML = `
 `;
 
 });
+
+function confirmLogout(){
+
+    return confirm(
+        "Tem certeza que deseja sair?"
+    );
+
+}

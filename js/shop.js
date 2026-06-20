@@ -304,6 +304,14 @@ function save() {
     renderShop();
 }
 
+function confirmLogout(){
+
+        return confirm(
+            "Tem certeza que deseja sair?"
+        );
+
+    }
+
 // ===============================
 // INICIALIZAÇÃO
 // ===============================
