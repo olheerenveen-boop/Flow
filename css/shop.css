@@ -104,3 +104,57 @@
             .can-buy { background: var(--accent); color: white; }
             .equipped { background: #4caf50; color: white; cursor: default; }
             .owned { background: #2196F3; color: white; }
+
+            #game-alert {
+
+            position: fixed;
+
+            top: 20px;
+
+            right: 20px;
+
+            background: #270043;
+
+            color: white;
+
+            padding: 20px 30px;
+
+            border-radius: 12px;
+
+            display: none;
+
+            z-index: 9999;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            box-shadow:
+            0 5px 20px rgba(0,0,0,.5);
+
+            animation: alertIn .3s;
+
+        }
+
+
+
+        @keyframes alertIn {
+
+            from {
+
+                transform: translateX(100px);
+
+                opacity: 0;
+
+            }
+
+
+            to {
+
+                transform: translateX(0);
+
+                opacity: 1;
+
+            }
+
+        }

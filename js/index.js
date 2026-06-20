@@ -27,7 +27,7 @@ function handleAuth() {
     // Verifica se todos os campos foram preenchidos
     if (!name || !email || !pass) {
 
-        alert("Preencha tudo.");
+        alert("Preencha todos os campos.");
         return;
     }
 
@@ -38,7 +38,9 @@ function handleAuth() {
         // Nome mínimo
         if (name.length < 3) {
 
-            alert("O nome precisa ter pelo menos 3 caracteres.");
+            alert(
+            "⚠️ O nome precisa ter pelo menos três caracteres."
+            );
             return;
 
         }
@@ -47,7 +49,9 @@ function handleAuth() {
         // Email tem que ter formato válido
         if (!email.includes("@") || (name.length < 5) ||!email.includes(".com")) {
 
-            alert("Coloque um email válido.");
+            alert(
+            "⚠️ Introduza um email válido."
+            );
             return;
 
         }
@@ -56,7 +60,9 @@ function handleAuth() {
         // Password mínimo
         if (pass.length < 4) {
 
-            alert("Crie uma password mais segura.");
+            alert(
+            "⚠️ Crie uma palavra-passe mais segura."
+            );
             return;
 
         }

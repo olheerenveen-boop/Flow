@@ -19,15 +19,15 @@ container.innerHTML = `
 
     <h2>${player.name}</h2>
 
-    <p>⭐ Level: ${player.level}</p>
+    <p>⭐ Nível: ${player.level}</p>
 
-    <p>❤️ HP: ${player.hp}/${player.maxHp}</p>
+    <p>❤️ Vida: ${player.hp}/${player.maxHp}</p>
 
-    <p>⭐ XP: ${player.xp}/${player.maxXp}</p>
+    <p>⭐ Exp.: ${player.xp}/${player.maxXp}</p>
 
-    <p>💰 Coins: ${player.coins}</p>
+    <p>💰 Moedas: ${player.coins}</p>
 
-    <p>💎 Diamonds: ${player.diamonds}</p>
+    <p>💎 Diamantes: ${player.diamonds}</p>
 
     <p>🎭 Skin equipada:
        ${player.equippedSkin}
@@ -72,12 +72,12 @@ lastReports.forEach(report => {
             </p>
 
             <p>
-                ⭐ XP:
+                ⭐ Exp.:
                 ${report.rewards.xp}
             </p>
 
             <p>
-                💰 Coins:
+                💰 Moedas:
                 ${report.rewards.coins}
             </p>
 
@@ -87,7 +87,7 @@ lastReports.forEach(report => {
             </p>
 
             <p>
-                ❤️ HP:
+                ❤️ Vida:
                 ${hpText}
             </p>
 

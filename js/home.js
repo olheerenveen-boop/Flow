@@ -212,7 +212,9 @@
             deathSound.play();
 
             
-            alert("💀 O jogador morreu! Perdeu 20 moedas.");
+            showAlert(
+            "💀 Morreste! Perdeste 20 moedas."
+            );
 
 
             if (player.dailyReport) {
@@ -277,7 +279,7 @@
 
         <br>
 
-        💰 Coins:
+        💰 Moedas:
         ${report.rewards.coins > 0 ? "+" : ""}
         ${report.rewards.coins}
 
@@ -293,7 +295,7 @@
 
         <p>
 
-        ❤️ HP:
+        ❤️ Vida:
 
         ${report.punishments.hpChange !== undefined 
         ? (report.punishments.hpChange > 0 
@@ -518,16 +520,22 @@
         while (player.xp >= player.maxXp) {
 
 
-            player.xp -= player.maxXp;
+    player.xp -= player.maxXp;
 
 
-            player.level++;
+    player.level++;
 
 
-            player.maxXp = player.level * 25;
+    player.maxXp = player.level * 25;
 
 
-        }
+    showAlert(
+        "⭐ Subiste para o nível "
+        + player.level
+    );
+
+
+    }
 
 
         savePlayer();
@@ -600,6 +608,26 @@
     // RECOMPENSAS DAS TAREFAS
     // =======================
 
+    function showAlert(message){
+
+    const box =
+    document.getElementById("game-alert");
+
+
+    box.innerHTML = message;
+
+
+    box.style.display = "block";
+
+
+    setTimeout(()=>{
+
+        box.style.display = "none";
+
+    },3000);
+
+}
+
     function giveReward(task) {
 
         if (task.type === "habit") {
@@ -616,6 +644,10 @@
         }
 
         task.rewarded = true;
+
+        showAlert(
+        "🎁 Recompensa recebida!"
+        );
 
         task.reward = {
             xp: task.type === "habit" ? 5 : 2,

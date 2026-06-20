@@ -199,6 +199,15 @@ function buySkin(id) {
 
     const s = skins.find(x => x.id === id);
 
+    if (playerData.level < (s.level || 1)) {
+
+    showAlert(
+        "🔒 Precisas de nível " + s.level
+    );
+
+    return;
+    }
+
 
     if (!s) {
 
@@ -212,8 +221,8 @@ function buySkin(id) {
     if (playerData.level < (s.level || 1)) {
 
 
-        alert(
-            "🔒 Precisas de nível " + s.level
+        showAlert(
+        "🔒 Precisas de nível " + s.level
         );
 
 
@@ -230,6 +239,8 @@ function buySkin(id) {
 
         ownedSkins.push(s.country);
 
+        showAlert("🎭 Skin desbloqueada!");
+
         buySound.play();
 
 
@@ -239,7 +250,7 @@ function buySkin(id) {
     } else {
 
 
-        alert("Saldo insuficiente!");
+        showAlert("💰 Saldo insuficiente!");
 
     }
 }
